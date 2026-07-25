@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đi Xem Phim Odyssey Với Tui Nha!</title>
+    <meta name="description" content="Lời mời dễ thương đi xem siêu phẩm Odyssey (2026) của Christopher Nolan.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+
+    <!-- Left Side Panel (History & Timeline Teaser) -->
+    <aside class="side-panel left-panel">
+        <div class="runes-decor">𐌀 · 𐌁 · 𐌂 · Ω · Ψ · Φ · Σ</div>
+        <div class="panel-card">
+            <h3>🏛️ Mốc Lịch Sử</h3>
+            <ul class="timeline-list">
+                <li>
+                    <span class="year">~1184 TCN</span>
+                    <p>Thành Troy sụp đổ. 10 năm chiến tranh kết thúc trong tro tàn.</p>
+                </li>
+                <li>
+                    <span class="year">10 Năm Vượt Biển</span>
+                    <p>Hành trình dạt bão tìm đường về nhà của Odysseus qua vô vàn vùng biển bí ẩn...</p>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <main class="invitation-container">
+        <div class="glass-card">
+            <div class="poster-wrapper">
+                <img src="poster.png" alt="Poster phim Odyssey phiên bản dễ thương" class="movie-poster">
+                <div class="glow-effect"></div>
+            </div>
+
+            <header class="content-header">
+                <h1 id="main-title">🎬 Chuyến Phim Cuối Tuần</h1>
+                <h2 id="movie-name">ODYSSEY <span>(2026)</span></h2>
+                <p class="director-note">Đạo diễn: <strong>Christopher Nolan</strong></p>
+            </header>
+
+            <div class="content-body">
+                <p>Ê người đẹp ơi! Xem siêu phẩm này với tớ nha? Đảm bảo phim bao cuốn, bắp nước tui lo! Đi nha đi nha?
+                    ✨</p>
+            </div>
+
+            <div class="actions">
+                <button id="btn-yes" class="btn btn-primary">Đi liền đi liền! 🥰</button>
+                <button id="btn-no" class="btn btn-secondary">Hong bé ơi 🥲</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Right Side Panel (Myth Teaser & Nolan Vision) -->
+    <aside class="side-panel right-panel">
+        <div class="runes-decor">Θ · Ξ · Δ · Λ · Π · 𐌈 · 𐌆</div>
+        <div class="panel-card">
+            <h3>📜 Huyền Thoại Kỳ Bí</h3>
+            <ul class="timeline-list">
+                <li>
+                    <span class="year">Thử Thách Thần Thoại</span>
+                    <p>Tiếng hát mê hoặc của Siren & ranh giới sinh tử nơi đại dương vô tận...</p>
+                </li>
+                <li>
+                    <span class="year">Góc Nhìn Nolan</span>
+                    <p>Tái hiện thiên sử thi vĩ đại bằng thị giác điện ảnh đỉnh cao!</p>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- Confetti Canvas -->
+    <canvas id="confetti-canvas"></canvas>
+
+    <!-- Success Modal -->
+    <div id="success-modal" class="hidden">
+        <div class="modal-content">
+            <h2>Tuyệt vờiiii! 🎉</h2>
+            <p>Chốt kèo nha! Nhớ lên đồ đẹp đi với tớ đó! 8h là phim chiếu rùi đó nhaaaaaaaa</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
