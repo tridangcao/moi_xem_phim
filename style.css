@@ -347,10 +347,49 @@ body {
     color: #cbd5e1;
 }
 
-/* Hide side panels on smaller screens so center invitation remains clear */
+/* Mobile & Tablet Layout: Stack panels vertically and allow scrolling */
 @media (max-width: 1080px) {
+    body {
+        flex-direction: column;
+        height: auto;
+        min-height: 100vh;
+        overflow-y: auto;
+        padding: 40px 0;
+        justify-content: flex-start;
+    }
+
+    /* Keep stars in background during scroll */
+    #stars, #stars2, #stars3 {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    .invitation-container {
+        order: 1; /* Main card appears first */
+        margin-bottom: 20px;
+    }
+
+    .left-panel {
+        order: 2; /* Left panel appears second */
+    }
+
+    .right-panel {
+        order: 3; /* Right panel appears last */
+    }
+
     .side-panel {
-        display: none;
+        position: relative;
+        top: auto;
+        transform: none;
+        width: 100%;
+        max-width: 420px;
+        padding: 0 20px;
+        left: auto;
+        right: auto;
+        margin-bottom: 25px;
+        opacity: 1;
     }
 }
 
